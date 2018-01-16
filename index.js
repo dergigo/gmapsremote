@@ -7,10 +7,16 @@ app.get('/', function(req, res){
   res.sendFile(__dirname + '/index.html');
 });
 
+app.get('/control', function(req, res){
+  res.sendFile(__dirname + '/control.html');
+});
+
+var control = io.of('/control');
+
 io.on('connection', function(socket){
-  socket.on('chat message', function(msg){
-    io.emit('chat message', msg);
-  });
+	socket.on('remote', function(code, command){
+		io.emit('remote', code, command);
+	});
 });
 
 http.listen(port, function(){

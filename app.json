@@ -1,8 +1,8 @@
 {
-  "name": "Socket-Chat-Example",
-  "description": "my first socket.io app",
-  "website": "https://github.com/socketio/chat-example",
-  "repository": "https://github.com/socketio/chat-example",
+  "name": "Google Maps remote control",
+  "description": "show google street view to somebody else",
+  "website": "https://github.com/dergigo/gmapsremote",
+  "repository": "https://github.com/dergigo/gmapsremote",
   "logo": "https://node-js-sample.herokuapp.com/node.svg",
   "success_url": "/",
   "keywords": [
